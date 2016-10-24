@@ -1,0 +1,8 @@
+.foo::before {
+  font-size: 12px;
+  color: #333;
+}
+
+.bar {
+  font-size: ref(.foo::before, font-size);
+}
